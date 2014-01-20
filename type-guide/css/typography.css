@@ -4,7 +4,7 @@
   - Dark red: #600 - rgb(100, 0, 0)
  */
 html {
-  font: normal 100%/1.5 Georgia,serif; /* 16px/24px */
+  font: normal 100%/1.5 helvetica,sans-serif; /* 16px/24px */
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -134,7 +134,7 @@ dd{
 /* ---------------------------------------------------------- BLOCKQUOTE ---*/
 
 blockquote {
-	background-color:#C90;
+	background-color: rgba(226,142,5,.5);
 	color:#000;
 	padding:2em 3.75em;
 	width:40%;	
@@ -143,6 +143,7 @@ blockquote {
 	margin:40px auto;
 	position:relative;
 }
+
 .openquote {
 	position:absolute;
 	color:#C00;
@@ -152,6 +153,7 @@ blockquote {
 	top:-.1em;
 	left:0.15em;
 }
+
 .closequote {
 	position:absolute;
 	color:#C00;
@@ -161,10 +163,12 @@ blockquote {
 	bottom:0em;
 	right:0.15em;
 }
-p {
+
+blockquote p {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 }
+
 cite {
 	font-family:Helvetica, sans-serif;
 	font-style:normal;
@@ -172,3 +176,130 @@ cite {
 	display:block;
 	color:#C00;
 }
+
+/* ---------------------------------------------------------- HORIZONTAL RULE ---*/
+
+hr {
+	border: 0;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid rgba(153,153,153,.5);
+	margin: 1.5rem;
+}
+
+/* ---------------------------------------------------------- TEXT LEVELS ---*/
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+sub {
+	font-weight: normal;
+	font-size: 0.7901rem;
+	margin-left: .1rem;
+}
+
+sup {
+	font-weight: normal;
+	font-size: 0.7901rem;
+	margin-left: .1rem;
+}
+
+i {
+	font-style: italic; 
+}
+
+b {
+	font-weight: bold;
+}
+
+ins {
+	text-decoration: none;
+	border-bottom: 0.1em solid rgba(130,4,120,.5);
+	color: #EF0DD1;
+}
+
+del {
+	color: #C00;
+}
+
+s {
+	text-decoration: none;
+	border-bottom: 0.125em dotted #C00;
+}
+
+time {
+	color: #058FE8;
+	font-weight: lighter;
+}
+
+abbr{
+	color: #4BC208;
+}
+
+q {
+	font-style: italic;
+}
+
+mark {
+	background-color: #FC0;
+}
+
+data {
+	color: green;
+}
+
+dfn {
+	color: #058FE8;
+	font-style: normal;
+}
+
+/* ---------------------------------------------------------- TABLES ---*/
+
+table{
+	margin-bottom: 2rem;
+}
+
+table thead{
+	background-color: #C00;
+	color: #fff;
+}
+
+table th,
+table td{
+	padding: 0.5rem 1rem;
+	text-align: left;
+	font-size: 1rem;
+}
+
+table td p{
+	margin: 0.2rem 0;
+	font-size: 0.875rem;
+	color: #666;
+}
+
+tr:nth-child(even){
+	background-color: rgba(255,153,0,.5);
+}
+
+.hours-table tr:last-child{
+	border-bottom: 3px solid #666;
+}
+
+.hours-table{
+	width: 100%;
+	background-color: #fff;
+	display: none;
+}
+
+caption {
+	text-align: center;
+	font-size: 0.8889rem;
+	margin-bottom: 1rem;
+}
+
+
+
