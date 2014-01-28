@@ -7,98 +7,44 @@
   - Yellow: #FC0 - rgb(255, 204, 0)
  */
 /* Masthead -------------------------------------------------------- */
-
-.logo {
-	background-color: transparent;
-	width: 100px;
-	position: relative;
-	margin: 1.5rem 5%;
-	border: none;
+.masthead{
+	background-color: rgba(255, 204, 0, .25);
 }
 
-.expand:hover{
-	-webkit-transform: scale(1.5, 1.5);
-	-moz-transform: scale(1.5, 1.5);
-	-ms-transform: scale(1.5, 1.5);
-	-o-transform: scale(1.5, 1.5);
-	transform: scale(1.5, 1.5);
+.logo{
+	max-width: 150px;
+	max-height: 150px;
+	margin: 0 auto;
 }
 
-.ease-all{
-	-webkit-transition: all 350ms ease-in-out;
-	-moz-transition: all 350ms ease-in-out;
-	-ms-transition: all 350ms ease-in-out;
-	-o-transition: all 350ms ease-in-out;
-	transition: all 350ms ease-in-out;
+@media only screen and (min-width: 50em) {
+	.logo {
+		margin: 0;
+	}
 }
-
-.nav-btn,
-.nav-btn:link,
-.nav-btn:visited{
-	display: block;
-	background: rgba(255,255,255,.5) url("../images/nav-icon.svg") no-repeat center center;
-	height: 40px;
-	width: 40px;
-	position: absolute;
-	top: 1.5rem;
-	right: 5%;
-	overflow: hidden;
-}
-
-.nav-btn:hover,
-.nav-btn:focus,
-.nav-btn:active{
-	background-color:#ccc;
-}
-
-.nav-top a,
-.nav-top a:link,
-.nav-top a:visited{
-	display: block;
-	background-color: #000;
+.nav {
+	margin-top: 1.5rem;
 	text-align: center;
-	color: #fff;
-	text-decoration: none;
-	padding: .75rem;
-	border-top: 1px solid #666;
-	width: 100px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1rem;
-	font-weight: normal;
 }
 
-.nav-top a:hover,
-.nav-top a:focus,
-.nav-top a:active{
-	background-color: #333;
+.nav a {
+	display: inline-block;
+	margin: 0 0.4em;
+}
+@media only screen and (min-width: 50em) {
+	.nav {
+		margin-top: 0;
+		text-align: right;
+	}
 }
 
-/* Toggle nav css*/
-
-.nav-top{
-	float: right;
-	margin-right: 5%;
-	margin-bottom: 2rem;
-	max-height: 0px;
-	-moz-transition: all 250ms linear;
-	-ms-transition: all 250ms linear;
-	-webkit-transition: all 250ms linear;
-	-0-transition: all 250ms linear;
-	transition: all 250ms linear;
-	overflow: hidden;
+form {
+	margin-top: 1.5rem;
+	position: relative;
 }
 
-.nav-top[data-state="expanded"]{
-	max-height: 15.25em;
-}
-
-.hide-text{
-	text-indent: 150%;
-	white-space: nowrap;
-	overflow: hidden;
-	display: block;
-}
-
-.header {
-	background-color: rgb(255, 153, 0, .5);
+@media only screen and (min-width: 50em) {
+	form {
+		float: right;
+	}
 }
