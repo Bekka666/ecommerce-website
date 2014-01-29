@@ -14,13 +14,11 @@
 
 .social{
 	position:relative;
-	padding-bottom: 1.5rem;
 	background-color: transparent;
 	margin: 0 5%;
 }
 .social ul{
 	position: absolute;
-	bottom: -10px;
 	right: 5%;
 	z-index: 10;
 }
@@ -32,43 +30,17 @@
 	position: relative;
 }
 
-.social li:hover{
-	top: -5px;
-}
-
-.ease-all-social{
-	-webkit-transition: all 100ms cubic-bezier(.75,1.9,.7,1);
-	-moz-transition: all 100ms cubic-bezier(.75,1.9,.7,1);
-	-ms-transition: all 100ms cubic-bezier(.75,1.9,.7,1);
-	-o-transition: all 100ms cubic-bezier(.75,1.9,.7,1);
-	transition: all 100ms cubic-bezier(.75,1.9,.7,1);
-}
-
 .copyright{
-	width: 30%;
-	margin-left: 5%;
+	margin-left: 0;
 	font-size: .5rem;
-	float: left;
 	clear: both;
 	color: #000000;
 	text-align: center;
-
 }
 
 .footer{
 	background-color: rgba(255, 204, 0, .25);
 	clear: both;
-	position:relative;
-	z-index: 100;
-}
-
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
 }
 
 @media only screen and (min-width: 50em) {
@@ -79,7 +51,7 @@
 
 @media only screen and (min-width: 50em) {
 	.copyright {
-		margin: 0 auto;
+		float: left;
 	}
 }
 

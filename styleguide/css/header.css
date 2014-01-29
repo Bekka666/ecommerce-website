@@ -38,13 +38,8 @@
 	}
 }
 
-form {
-	margin-top: 1.5rem;
-	position: relative;
-}
-
-@media only screen and (min-width: 50em) {
-	form {
-		float: right;
-	}
+#search {
+	float: right;
+	margin-top: .5rem;
+	margin-right: 0;
 }

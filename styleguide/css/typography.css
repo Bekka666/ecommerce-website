@@ -368,7 +368,7 @@ tr:nth-child(even){
 	display: none;
 }
 
-caption {
+figcaption {
 	text-align: center;
 	font-size: 0.8889rem;
 	margin-bottom: 1rem;
