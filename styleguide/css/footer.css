@@ -8,7 +8,6 @@
  */
 .social img {
 	width: 1.5rem;
-	margin: 1.5rem auto;
 	display: inline;
 }
 
@@ -16,6 +15,8 @@
 	position:relative;
 	background-color: transparent;
 	margin: 0 5%;
+	text-align: center;
+	padding: 0;
 }
 .social ul{
 	position: absolute;
@@ -24,10 +25,13 @@
 }
 
 .social li{
-	display:inline-block;
-	float: left;
-	margin-left: 1rem;
-	position: relative;
+
+}
+
+.social a,
+.social a:link,
+.social a:visited{
+	border: none;
 }
 
 .copyright{
