@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+input {
+	display: inline-block;
+	padding: 0.5em 1em;
+	background-color: #FFF;
+	background-image: linear-gradient(to bottom, #FFF, #CCC); /*minus all the unmbers by 2 to get a close color for gradient*/
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	color: #000;
+	font-weight: bold;
+	border: 0;
+	margin: 0 auto;
+}

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+  Colour Palette
+  - Red: #C00 - rgb(204, 0, 0)
+  - Orange: #F90 - rgb(255, 153, 0)
+  - Yellow: #FC0 - rgb(255, 204, 0)
+ */
+/* Masthead -------------------------------------------------------- */
+.masthead{
+	background-color: rgba(255, 204, 0, .25);
+}
+
+.logo{
+	max-width: 150px;
+	max-height: 150px;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 50em) {
+	.logo {
+		margin: 0;
+	}
+}
+.nav {
+	padding: 0;
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.nav a {
+	display: inline-block;
+	margin: 0 0.4em;
+}
+
+
+#search {
+	text-align: center;
+	margin-top: .5rem;
+	margin-right: 0;
+}
+
+@media only screen and (min-width: 50em) {
+	#search {
+		text-align: right;
+	}
+	
+	.nav {
+		margin-top: 3rem;
+		text-align: right;
+	}
+}
