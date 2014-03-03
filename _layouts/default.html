@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Frozen</title>
+<title>{{page.title}} · Frozen</title>
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -38,21 +38,27 @@
 		<nav class="unit unit-s-1 unit-m-1 unit-l-2-3">
 			<ul class="list-group giga brand-family nav push-0">
 				<li class="list-group-item list-group-item-inline">
-					<a href="{{site.baseurl}}/index.html">Home</a>
+					<a class="{% if page.url == '/' %}current{% endif %}" <a href="{{site.baseurl}}/index.html">Home</a>
 				</li>
 				<li class="list-group-item list-group-item-inline">
-					<a href="{{site.baseurl}}/about.html">About</a>
+					<a class="{% if page.url == '/about/' %}current{% endif %}" <a href="{{site.baseurl}}/about.html">About</a>
 				</li>
 				<li class="list-group-item list-group-item-inline">
-					<a href="#">Products</a>
+					<a class="{% if page.url == '/products/' %}current{% endif %}" <a href="#">Products</a>
 				</li>
 				<li class="list-group-item list-group-item-inline">
-					<a href="#">Prices</a>
+					<a class="{% if page.url == '/prices/' %}current{% endif %}" <a href="#">Prices</a>
 				</li>
 			</ul>
 		</nav>
 	</div>
 </header>
+
+{% if page.showbanner %}
+	<div class="banner">
+		<h2>{{page.bannertext}}</h2>
+	</div>
+{% endif %}
 
 {{content}}
 
