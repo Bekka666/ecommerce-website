@@ -13,8 +13,12 @@
 	border-radius: 6px;
 }
 
-p, h2 {
+p {
 	font-size: 0.8889rem;
+	text-align: center;
+}
+
+h2 {
 	text-align: center;
 }
 
