@@ -13,10 +13,11 @@
 	border-radius: 6px;
 }
 
-p {
+p, h2 {
 	font-size: 0.8889rem;
+	text-align: center;
 }
 
-btn{
+btn {
 	text-align: center;
 }
