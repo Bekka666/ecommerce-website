@@ -1,38 +1,9 @@
 ---
 layout: default
-title: Products
 ---
-<div class="grid">
-	<div class="unit unit-s-1 unit-m-1-2 unit-l-1-3">
-		<h1>PRODUCTS</h1>
-	</div>
-	<div class="unit unit-s-1 unit-m-1-2 unit-l-2-3">
-		<p class="giga">Our products!</p>
-	</div>
-</div>
 
-<h2>Utensils</h2>
-<ul>
-	{% for prod in site.categories.utensils %}
-		{% if product.category == 'utensils' %}
-			<li>
-				<img src="{{site.baseurl}}/styleguide/frozen-yogurt{{product.image}}" alt="">
-				{{product.title}}
-			</li>
-		{% endif%}
-	{% endfor %}
-</ul>
+<h2>Utencils</h2>
+{% include product-list.html category='utencils' %}
 
 <h2>Yogurt</h2>
-<ul>
-	{% for prod in site.categories.utensils %}
-		{% if product.category == 'yogurt' %}
-			<li>
-				<img src="{{site.baseurl}}/styleguide/frozen-yogurt{{product.image}}" alt="">
-				{{product.title}}
-			</li>
-		{% endif%}
-	{% endfor %}
-</ul>
-
-{{content}}
+{% include product-list.html category='yogurt' %}
