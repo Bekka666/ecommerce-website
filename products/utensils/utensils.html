@@ -1,0 +1,16 @@
+---
+layout: products
+title: Utensils
+---
+
+<h1>Utensils</h1>
+
+<ul>
+	{% for prod in site.categories.utensils %}
+			<li>
+				<a href="{{site.baseurl}}{{prod.url}}"></a>
+					<img src="{{site.baseurl}}/images/{{prod.image}}" alt="">
+				{{prod.name}}
+			</li>
+	{% endfor %}
+</ul>

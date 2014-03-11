@@ -1,14 +1,16 @@
 ---
 layout: default
+showbanner: yes
+bannertext: Products
 ---
 
 <h1>{{page.name}}</h1>
 
-<dl>
-	<dt>Time Period</dt>
-	<dd>{{page.time_period}}</dd>
-	<dt>Diet</dt>
-	<dd>{{page.diet}}</dd>
-</dl>
+<nav>
+	<ul>
+		<li><a href="{{site.baseurl}}/utensils">Utensils</a></li>
+		<li><a href="{{site.baseurl}}/yogurt">Yogurt</a></li>
+	</ul>
+</nav>
 
-{{content}}
+{{Content}}

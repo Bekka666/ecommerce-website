@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: products
 title: Products
 ---
 <div class="grid">
@@ -13,12 +13,23 @@ title: Products
 
 <ul>
 	{% for prod in site.pages %}
-		{% if prod.category == 'product' %}
+		{% if prod.category == 'utensils' %}
 			<li>
-			<a href="{{site.baseurl}}{{dino.url}}">
-				<img src="{{site.baseurl}}/images/{{prod.image}}" alt="">
-			{{prod.name}}
+				<a href="{{site.baseurl}}{{prod.url}}">
+					<img src="{{site.baseurl}}/images/{{prod.image}}" alt="">
+				{{prod.name}}
 			</li>
 		{% endif %}
 	{% endfor %}
+	
+	{% for prod in site.pages %}
+		{% if prod.category == 'yogurt' %}
+			<li>
+				<a href="{{site.baseurl}}{{prod.url}}">
+					<img src="{{site.baseurl}}/images/{{prod.image}}" alt="">
+				{{prod.name}}
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>
 </ul>
