@@ -1,7 +1,7 @@
 ---
-category: utensils
+category: utencils
 title: Jewel Colourd Spoons
-image: images/styleguide/frozen-yogurt/jewel-spoons.png
+image: jewel-spoons.png
 layout: products
 ---
 Jewel Spoons

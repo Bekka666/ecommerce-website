@@ -1,7 +1,7 @@
 ---
-category: utensils
+category: utencils
 title: Metal Spoons
-image: images/styleguide/frozen-yogurt/metal-spoons.png
+image: metal-spoons.png
 layout: products
 ---
 

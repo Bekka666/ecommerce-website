@@ -1,7 +1,7 @@
 ---
-category: utensils
+category: utencils
 title: Heated Scoop
-image: images/styleguide/frozen-yogurt/heated-scoop.png
+image: heated-scoop.png
 layout: products
 ---
 

@@ -1,7 +1,8 @@
 <ul>
 	{% for products in site.pages %}
-		{% if products.category == 'utensils' %}
+		{% if products.category == include.category %}
 			<li>
+				<img src="{{site.baseurl}}/styleguide/images/frozen-yogurt/{{products.image}}" alt="Photo of {{products.title}}">
 				{{products.title}}
 			</li>
 		{% endif %}

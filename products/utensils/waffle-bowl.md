@@ -1,7 +1,7 @@
 ---
-category: utensils
+category: utencils
 title: Waffle Bowl
-image: images/styleguide/frozen-yogurt/waffle-bowl.png
+image: waffle-bowl.png
 layout: products
 ---
 
