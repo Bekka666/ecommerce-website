@@ -1,6 +1,6 @@
 ---
 category: utensils
-name: Coloured Ice Cream Scoops
+title: Coloured Ice Cream Scoops
 image: images/styleguide/frozen-yogurt/color-scoop.png
 layout: products
 ---

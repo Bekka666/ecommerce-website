@@ -7,10 +7,10 @@ title: Utensils
 
 <ul>
 	{% for prod in site.categories.utensils %}
+		{% if product.category == 'utensils' %}
 			<li>
-				<a href="{{site.baseurl}}{{prod.url}}"></a>
-					<img src="{{site.baseurl}}/images/{{prod.image}}" alt="">
-				{{prod.name}}
+				{{product.title}}
 			</li>
+		{% endif%}
 	{% endfor %}
 </ul>
