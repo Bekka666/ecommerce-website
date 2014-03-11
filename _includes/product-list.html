@@ -2,8 +2,10 @@
 	{% for products in site.pages %}
 		{% if products.category == include.category %}
 			<li>
-				<img src="{{site.baseurl}}/styleguide/images/frozen-yogurt/{{products.image}}" alt="Photo of {{products.title}}">
-				{{products.title}}
+				<a href="{{site.baseurl}}{{products.url}}">
+					<img src="{{site.baseurl}}/styleguide/images/frozen-yogurt/{{products.image}}" alt="Photo of {{products.title}}">
+					<h3>{{products.title}}</h3>
+				</a>
 			</li>
 		{% endif %}
 	{% endfor %}
