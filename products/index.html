@@ -12,15 +12,9 @@ title: Products
 </div>
 
 <h2>Utensils</h2>
+{% include product-list.html %}
 
-<ul>
-	{% for product in site.pages %}
-		{% if product.category == 'utensils' %}
-			<li>
-				{{product.title}}
-			</li>
-		{% endif%}
-	{% endfor %}
-</ul>	
+<h2>Yogurt</h2>
+{% include product-list.html %}
 
 {{content}}
