@@ -12,9 +12,27 @@ title: Products
 </div>
 
 <h2>Utensils</h2>
-{% include product-list.html %}
+<ul>
+	{% for prod in site.categories.utensils %}
+		{% if product.category == 'utensils' %}
+			<li>
+				<img src="{{site.baseurl}}/styleguide/frozen-yogurt{{product.image}}" alt="">
+				{{product.title}}
+			</li>
+		{% endif%}
+	{% endfor %}
+</ul>
 
 <h2>Yogurt</h2>
-{% include product-list.html %}
+<ul>
+	{% for prod in site.categories.utensils %}
+		{% if product.category == 'yogurt' %}
+			<li>
+				<img src="{{site.baseurl}}/styleguide/frozen-yogurt{{product.image}}" alt="">
+				{{product.title}}
+			</li>
+		{% endif%}
+	{% endfor %}
+</ul>
 
 {{content}}

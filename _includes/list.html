@@ -2,6 +2,7 @@
 	{% for prod in site.categories.utensils %}
 		{% if product.category == 'utensils' %}
 			<li>
+				<img src="{{site.baseurl}}/styleguide/frozen-yogurt{{product.image}}" alt="">
 				{{product.title}}
 			</li>
 		{% endif%}
