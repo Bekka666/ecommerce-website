@@ -2,6 +2,6 @@
 category: yogurt
 title: Mango Frozen Yogurt
 image: mango.png
-layout: products
+layout: product-details
 ---
 

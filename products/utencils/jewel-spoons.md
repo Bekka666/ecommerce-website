@@ -2,6 +2,6 @@
 category: utencils
 title: Jewel Colourd Spoons
 image: jewel-spoons.png
-layout: products
+layout: product-details
 ---
 Jewel Spoons

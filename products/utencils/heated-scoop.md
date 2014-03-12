@@ -2,7 +2,7 @@
 category: utencils
 title: Heated Scoop
 image: heated-scoop.png
-layout: products
+layout: product-details
 ---
 
 Heated Scoop

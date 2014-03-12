@@ -1,6 +1,9 @@
+---
+layout: default
+---
+{% include nav.html %}
+
 <main>
-{% for products in site.pages %}
-{% if products.category == include.category %}
 	<section>
 		<div class="grid">
 			<div class="unit unit-s-1 unit-2-3 unit-m-1-2">
@@ -9,7 +12,7 @@
 			</div>
 
 			<div class="unit gutter unit-s-1 unit-m-1-2 push-2">
-				<h2>Mango</h2>
+				<h2>{{page.title}}</h2>
 					<p>Comes in a variety of sizes!</p>
 						<ul class="list-group">
 							<li class="list-group-item"><strong>$10.99</strong> - 4L Tub</li>
@@ -60,6 +63,4 @@
 	</div>
 	<hr></hr>
 	</section>
-{% endif %}
-{% endfor %}
 </main>
