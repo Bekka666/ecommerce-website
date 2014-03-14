@@ -3,8 +3,17 @@ layout: default
 ---
 {% include nav.html %}
 
-<h2>Utencils</h2>
-{% include product-list.html category='utencils' %}
-
-<h2>Yogurt</h2>
-{% include product-list.html category='yogurt' %}
+<section>
+		<div class="grid promo-group">
+		
+			<div class="gutter unit unit-s-1 unit-m-1-2 unit-l-1-2">
+				<h2>Utencils</h2>
+				{% include promo-small.html title="Utensils" desc="Low prices on ice cream bowls and utensils!" image="frozen-yogurt/bowl.png"%}
+			</div>
+			
+			<div class="gutter unit unit-s-1 unit-m-1-2 unit-l-1-2">
+				<h2>Yogurt</h2>
+				{% include promo-small.html title="Desserts" desc="Frozen desserts!" image="frozen-yogurt/chocolate.png"%}
+			</div>
+		</div>
+	</section>
