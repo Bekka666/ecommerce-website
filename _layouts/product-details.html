@@ -14,11 +14,7 @@ layout: default
 			<div class="unit gutter unit-s-1 unit-m-1-2 push-2">
 				<h2>{{page.title}}</h2>
 					{{content}}
-					{% for products in site.pages %}
-					{% if products.category == include.category %}
-					<a class="btn" href="{{site.baseurl}}{{products.url}}">Buy Now!</a>
-					{% endif %}
-					{% endfor %}
+					<a class="btn" href="{{site.baseurl}}/cart/">Buy Now!</a>
 			</div>
 		</div>
 	</section>
