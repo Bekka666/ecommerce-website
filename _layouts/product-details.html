@@ -7,18 +7,13 @@ layout: default
 	<section>
 		<div class="grid">
 			<div class="unit unit-s-1 unit-2-3 unit-m-1-2">
-				<img class="img-flex push-1-2 gutter-1-2" src="{{site.baseurl}}images/styleguide/frozen-yogurt/{{products.image}}" alt="Photo of {{products.title}}">
+				<img class="img-flex push-1-2 gutter-1-2" src="{{site.baseurl}}/styleguide/images/frozen-yogurt/{{page.image}}" alt="Photo of {{page.title}}">
 				<figcaption class="micro">Frozen yogurt blended with mango slices.</figcaption>
 			</div>
 
 			<div class="unit gutter unit-s-1 unit-m-1-2 push-2">
 				<h2>{{page.title}}</h2>
-					<p>Comes in a variety of sizes!</p>
-						<ul class="list-group">
-							<li class="list-group-item"><strong>$10.99</strong> - 4L Tub</li>
-							<li class="list-group-item"><strong>$6.99</strong> - 2L Tub</li>
-							<li class="list-group-item"><strong>$4.99</strong> - 1.5L tub</li>
-						</ul>
+					{{content}}
 					<a class="btn" href="#">Buy Now!</a>
 			</div>
 		</div>
@@ -29,15 +24,15 @@ layout: default
 	<div class="grid push">
 		<h2 class="kilo">We also recommend...</h2>
 			<div class="unit unit-s-1 unit-m-1-2 unit-l-1-2 gutter-1-2 push-1-2">
-				<img class="img-flex" src="{{site.baseurl}}images/styleguide/frozen-yogurt/jewel-spoons.png" alt"jewel-spoons">
+				<img class="img-flex" src="{{site.baseurl}}/styleguide/images/frozen-yogurt/{{page.recommended1}}" alt"jewel-spoons">
 			</div>
 			<div class="unit unit-s-1 unit-m-1-2 unit-l-1-2 gutter-1-2">
-				<img class="img-flex" src="{{site.baseurl}}images/frozen-yogurt/berries.png" alt"berries">
+				<img class="img-flex" src="{{site.baseurl}}/styleguide/images/frozen-yogurt/{{page.recommended2}}" alt"berries">
 			</div>
 	</div>
 	<hr></hr>
 	</section>
-	
+	{% if page.ingredients %}
 	<section class="rec">
 	<div class="grid push">
 		<h2 class="kilo">Ingredients</h2>
@@ -46,21 +41,13 @@ layout: default
 			</div>
 			<div class="unit unit-s-1 unit-m-1 unit-l-1 gutter-1-2 kilo">
 				<ul class="list-group">
-							<li class="list-group-item">Nonfat Milk</li>
-							<li class="list-group-item">Sugar</li>
-							<li class="list-group-item">Whey</li>
-							<li class="list-group-item">Buttermilk</li>
-							<li class="list-group-item">Guar Gum</li>
-							<li class="list-group-item">Carrageenan</li>
-							<li class="list-group-item">Locust Bean Gum</li>
-							<li class="list-group-item">Active Cultures</li>
-							<li class="list-group-item">L. Acidophilus</li>
-							<li class="list-group-item">L. Bulgaricus</li>
-							<li class="list-group-item">S. Thermophilus</li>
-							<li class="list-group-item">Bifidobacterium</li>
+				{% for ingred in page.ingredients %}
+							<li class="list-group-item">{{ingred}}</li>
+				{% endfor %}
 						</ul>
 			</div>
 	</div>
 	<hr></hr>
+	{% endif %}
 	</section>
 </main>
