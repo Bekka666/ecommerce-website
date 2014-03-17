@@ -7,8 +7,10 @@ recommended1: bowl.png
 recommended2: heated-scoop.png
 ---
 
-Comes in a variety of sizes! 
+Comes in a variety of colours!
 
-- **$10.99** - 4L Tub
-- **$10.99** - 4L Tub
-- **$10.99** - 4L Tub
+  - **$3.99 ea**
+  - Yellow
+  - Green
+  - Blue
+  - Pink
