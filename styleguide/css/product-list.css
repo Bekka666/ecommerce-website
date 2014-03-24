@@ -3,3 +3,8 @@
 	padding: 1rem;
 	border-radius: 6px;
 }
+
+.product-list a, 
+.product-list a:link{
+	border: 0;
+}
